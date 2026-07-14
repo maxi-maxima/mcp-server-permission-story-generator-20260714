@@ -1,0 +1,1 @@
+{"tools":[{"name":"read_repo","description":"Read repository files","permissions":["filesystem"]},{"name":"search_web","description":"Search documentation","permissions":["network"]}]}
