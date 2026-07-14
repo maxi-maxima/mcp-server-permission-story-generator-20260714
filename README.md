@@ -19,7 +19,12 @@ python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.j
 ## Example
 ```bash
 python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.json
+python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.json --min-level medium
+python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.json --format json-summary
 ```
+
+`--min-level` filters the markdown story to medium/high-risk tools for faster approvals, while `--format json-summary` produces counts by risk level and permission for dashboards or CI checks.
+The tool now accepts both `permissions` and MCP-style `capabilities` arrays.
 
 ## Self-check
 ```bash

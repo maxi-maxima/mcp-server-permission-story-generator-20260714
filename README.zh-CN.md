@@ -19,7 +19,12 @@ python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.j
 ## 示例
 ```bash
 python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.json
+python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.json --min-level medium
+python mcp-server-permission-story-generator-20260714.py examples/mcp-manifest.json --format json-summary
 ```
+
+`--min-level` 可只输出中/高风险工具，方便快速审批；`--format json-summary` 会输出按风险等级和权限聚合的 JSON，便于仪表盘或 CI 检查。
+工具现在同时支持 `permissions` 和 MCP 常见的 `capabilities` 数组。
 
 ## 自检
 ```bash
